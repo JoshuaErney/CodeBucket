@@ -1,6 +1,6 @@
 # CodeBucket
 
-A Repository to hold different small-scale projects
+CodeBucket: A collection of small, standalone projects and quick experiments. This repository hosts various code snippets, practice exercises, and short-term projects across different technologies, serving as a playground for learning and skill-building."
 
 ---
 
