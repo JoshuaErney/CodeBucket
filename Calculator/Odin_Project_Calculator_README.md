@@ -10,6 +10,7 @@ A calculator project developed as part of the Odin Project curriculum. This calc
     - [The Challenge](#the-challenge)
     - [Screenshot](#screenshot)
     - [Links](#links)
+  - [Assignment Checklist](#assignment-checklist)
   - [My Process](#my-process)
     - [Built With](#built-with)
     - [What I Learned](#what-i-learned)
@@ -32,6 +33,22 @@ Build a functional calculator capable of basic operations (addition, subtraction
 
 - [Live Demo](#) <!-- Add live demo link if available -->
 - [Project Repository](#) <!-- Add link to the repository -->
+
+## Assignment Checklist
+
+- [x] Set up a new project with HTML, CSS, and JavaScript files.
+- [x] Create the basic structure of the calculator in HTML.
+- [x] Style the calculator using CSS.
+- [ ] Implement the functions for the basic math operations (add, subtract, multiply, divide).
+- [ ] Create the functions that populate the display when you click the number buttons.
+- [ ] Create the functions that handle the operator buttons.
+- [ ] Create the function that handles the equals button.
+- [ ] Create the function that handles the clear button.
+- [ ] Add a function to handle decimal points.
+- [ ] Add a function to handle keyboard input.
+- [ ] Ensure the calculator can handle multiple operations and respects the order of operations.
+- [ ] Test the calculator thoroughly to ensure all functions work as expected.
+- [ ] Refactor the code for readability and maintainability.
 
 ## My Process
 
