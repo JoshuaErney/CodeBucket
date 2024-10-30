@@ -2,23 +2,6 @@
 
 A calculator project developed as part of the Odin Project curriculum. This calculator performs basic arithmetic operations and is designed to reinforce HTML, CSS, and JavaScript skills.
 
-## Table of Contents
-
-- [Odin Project Calculator](#odin-project-calculator)
-  - [Table of Contents](#table-of-contents)
-  - [Overview](#overview)
-    - [The Challenge](#the-challenge)
-    - [Screenshot](#screenshot)
-    - [Links](#links)
-  - [Assignment Checklist](#assignment-checklist)
-  - [My Process](#my-process)
-    - [Built With](#built-with)
-    - [What I Learned](#what-i-learned)
-    - [Continued Development](#continued-development)
-    - [Useful Resources](#useful-resources)
-  - [Author](#author)
-  - [Acknowledgments](#acknowledgments)
-
 ## Overview
 
 ### The Challenge
@@ -28,11 +11,6 @@ Build a functional calculator capable of basic operations (addition, subtraction
 ### Screenshot
 
 ![Calculator Screenshot](screenshot.png) <!-- Replace with actual screenshot file path -->
-
-### Links
-
-- [Live Demo](#) <!-- Add live demo link if available -->
-- [Project Repository](#) <!-- Add link to the repository -->
 
 ## Assignment Checklist
 
@@ -70,10 +48,6 @@ Future improvements could include more complex mathematical functions, keyboard 
 
 - [MDN Web Docs - JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Comprehensive JavaScript documentation.
 - [The Odin Project](https://www.theodinproject.com) - The curriculum providing the project outline and resources.
-
-## Author
-
-- [Joshua P. Erney](#) <!-- Add your preferred link, such as your LinkedIn or GitHub -->
 
 ## Acknowledgments
 
