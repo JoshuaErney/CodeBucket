@@ -57,10 +57,13 @@ main {
   padding: 20px;
   color: #333;
   transition: background-color 0.3s ease;
+  box-shadow: 0 4px #999;
 }
 
 .calculator_key:active {
   background-color: #d4d4d4;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
 }
 
 .calculator_key.operator {
