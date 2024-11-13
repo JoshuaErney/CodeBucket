@@ -38,20 +38,39 @@
           <input type="email" id="email" name="email" required aria-required="true" aria-describedby="emailHelp"
             placeholder="Email Address">
         </div>
+        <div class="inputFieldGroup">
+          <div class="inputField">
+            <label for="birthMonth" class="sr-only">Birth Month</label>
+            <input type="number" id="birthMonth" name="birthMonth" required aria-required="true"
+              aria-describedby="birthMonthHelp" placeholder="Birth Month" min="1" max="12" required>
+          </div>
+          <div class="inputField">
+            <label for="birthYear" class="sr-only">Birth Year</label>
+            <input type="number" id="birthYear" name="birthYear" required aria-required="true"
+              aria-describedby="birthYearHelp" placeholder="Birth Year" min="1900" max="2005" required>
+          </div>
+        </div>
       </div>
+
+      <!-- New Section -->
       <div id="accountInfo">
         <h2>Account Information</h2>
         <div class="inputField">
           <label for="username" class="sr-only">Username</label>
-          <input type="text" id="username" name="username" required aria-required="true" aria-describedby="usernameHelp"
-            placeholder="Username">
-          <small id="usernameHelp"></small>
+          <input type="text" id="username" name="username" required aria-required="true" placeholder="Username">
         </div>
         <div class="inputField">
           <label for="password" class="sr-only">Password</label>
           <input type="password" id="password" name="password" required aria-required="true"
             aria-describedby="passwordHelp" placeholder="Password">
           <small id="passwordHelp">Your password must be at least 8 characters long.</small>
+        </div>
+        <div class="tooltip" id="passwordTooltip">
+          <p>Password must contain:</p>
+          <ul>
+            <li>At least <i>one</i> Uppercase & Lowercase letter</li>
+            <li>At least <i>one</i> Number & Special Character</li>
+          </ul>
         </div>
         <div class="inputField">
           <label for="confirmPassword" class="sr-only">Confirm Password</label>
