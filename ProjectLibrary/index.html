@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Project: Book Library</title>
+</head>
+
+<body>
+    <main>
+        <div class="formContainer">
+            <form action="" method="post" name="newBookForm">
+                <!-- Book Details -->
+                <fieldset>
+                    <legend>Book Details</legend>
+                    <label for="bookTitle">Enter the book title:</label>
+                    <input type="text" id="bookTitle" name="bookTitle" value="" required>
+
+                    <label for="bookAuthor">Enter the author name:</label>
+                    <input type="text" id="bookAuthor" name="bookAuthor" value="" required>
+
+                    <label for="bookGenre">Choose a book genre:</label>
+                    <select id="bookGenre" name="bookGenre">
+                        <option value="" disabled selected>Select a genre</option>
+                        <option value="fiction">Fiction</option>
+                        <option value="nonfiction">Non-fiction</option>
+                        <option value="mystery">Mystery</option>
+                        <option value="fantasy">Fantasy</option>
+                        <option value="sci-fi">Science Fiction</option>
+                        <option value="romance">Romance</option>
+                        <option value="horror">Horror</option>
+                        <option value="thriller">Thriller</option>
+                        <option value="biography">Biography</option>
+                        <option value="history">History</option>
+                        <option value="poetry">Poetry</option>
+                    </select>
+
+                    <label for="yearPublished">Enter Publication year:</label>
+                    <input type="number" id="yearPublished" name="yearPublished" min="1600" max="2025" value=""
+                        maxlength="4" minlength="4">
+
+                    <label for="bookPublisher">Enter the book's Publisher:</label>
+                    <input type="text" id="bookPublisher" name="bookPublisher" value="">
+
+                    <label for="ISBN">Enter the ISBN number: </label>
+                    <input type="number" id="ISBN" name="ISBN" value="" maxlength="13" minlength="13">
+                </fieldset>
+
+                <!-- Additional Details -->
+                <fieldset>
+                    <legend>Additional Details</legend>
+                    <label for="language">Language:</label>
+                    <input type="text" id="language" name="language" required>
+
+                    <label for="edition">Edition:</label>
+                    <input type="text" id="edition" name="edition" required>
+
+                    <label for="format">Format:</label>
+                    <input type="text" id="format" name="format" required>
+
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" name="location" required>
+
+                    <label for="tags">Tags:</label>
+                    <input type="text" id="tags" name="tags" placeholder="Comma-separated tags">
+
+                    <label for="summary">Summary:</label>
+                    <textarea id="summary" name="summary" rows="4" cols="50"></textarea>
+
+                    <label for="rating">Rating:</label>
+                    <input type="number" id="rating" name="rating" min="0" max="5" step="0.1" value="0">
+
+                    <label for="availabilityStatus">Availability Status:</label>
+                    <select id="availabilityStatus" name="availabilityStatus">
+                        <option value="Available">Available</option>
+                        <option value="Checked Out">Checked Out</option>
+                        <option value="Reserved">Reserved</option>
+                    </select>
+
+                    <label for="digitalVersionURL">Digital Version URL:</label>
+                    <input type="url" id="digitalVersionURL" name="digitalVersionURL">
+
+                    <label for="seriesInfo">Series Info:</label>
+                    <input type="text" id="seriesInfo" name="seriesInfo" placeholder="If part of a series">
+                </fieldset>
+
+                <!-- Administrative Details -->
+                <fieldset>
+                    <legend>Administrative Details</legend>
+                    <label for="dueDate">Due Date:</label>
+                    <input type="date" id="dueDate" name="dueDate">
+                </fieldset>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
