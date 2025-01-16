@@ -12,7 +12,7 @@
 body {
     background-color: #fff;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.5;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -20,7 +20,7 @@ body {
 
 /* Header */
 header {
-    margin: 1rem 2rem;
+    margin: 1rem;
     padding: 1rem;
 }
 
@@ -34,17 +34,57 @@ li {
     list-style-type: none;
 }
 
-#brandName {
-    font-size: 24px;
+.container,
+.btn-group {
+    display: flex;
+    gap: 0.75rem;
 }
 
+/* Style for links */
+ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Brand name styling */
+#brandName {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Button-like link styling */
 .icon {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 0.75rem;
-    border: 1px solid black;
-    border-radius: 0.75em;
+    gap: 5px;
+    justify-content: center;
+}
+
+/* Hover effect for the button */
+.icon:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+}
+
+/* Active (pressed) effect for the button */
+.icon:active {
+    transform: scale(0.95);
+    background-color: gray;
+    border-color: darkgray;
+}
+
+/* Feather icon adjustments */
+.icon i {
+    vertical-align: middle;
 }
 
 a {
@@ -60,11 +100,107 @@ main {
 }
 
 .bookDisplay {
-    border: 1px solid #333;
     border-radius: 0.75em;
-    background-color: #f9f9f9;
     width: 100%;
-    height: 750px;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+/* Container for the book card */
+.book-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* Light gray background */
+    border: 1px solid #e0e0e0;
+    /* Subtle border */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+    max-width: 600px;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect for the book card */
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Book cover section */
+.book-cover img {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Book information section */
+.book-info {
+    flex: 1;
+}
+
+/* Book title */
+.book-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 5px;
+    color: #333;
+}
+
+/* Book author */
+.book-author {
+    font-size: 14px;
+    margin: 0 0 10px;
+    color: #666;
+}
+
+/* Book description */
+.book-description {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Style for both buttons */
+.btn-group .btn-details {
+    text-decoration: none;
+    /* Remove underline */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* Space between icon and text */
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Hover effect for buttons */
+.btn-group .btn-details:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Active (pressed) effect for buttons */
+.btn-group .btn-details:active {
+    transform: scale(0.95);
+    background-color: gray;
+    border-color: darkgray;
+}
+
+/* Feather icon adjustments */
+.btn-group .btn-details i {
+    vertical-align: middle;
 }
 
 .feather {

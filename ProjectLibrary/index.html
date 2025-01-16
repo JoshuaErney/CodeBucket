@@ -14,15 +14,38 @@
         <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="index.html" id="brandName">The Spine Shelf</a></li>
-                <li>
-                    <a href="newBookForm.html" class="icon"><i data-feather="plus"></i> Create New Book</a>
-                </li>
+                <div class="container">
+                    <li>
+                        <a href="#" class="icon"><i data-feather="plus"></i> Quick Add</a>
+                    </li>
+                    <li>
+                        <a href="newBookForm.html" class="icon">Add Book <i data-feather="external-link"></i></a>
+                    </li>
+                </div>
             </ul>
         </nav>
     </header>
     <main>
-        <section aria-labelledby="library-heading">
-            <div class="bookDisplay" aria-live="polite" aria-busy="false"></div>
+        <section>
+            <div class="bookDisplay" aria-live="polite" aria-busy="false">
+                <div class="book-card">
+                    <div class="book-cover">
+                        <img src="/ProjectLibrary/pawan-thapa-66Oo9dALyTE-unsplash.jpg" alt="Book Cover">
+                    </div>
+                    <div class="book-info">
+                        <h2 class="book-title">Book Title</h2>
+                        <p class="book-author">by Author Name</p>
+                        <p class="book-description">This is a brief description of the book. It provides a quick
+                            overview of the content
+                            or story.</p>
+                        <div class="btn-group">
+                            <button class="btn-details icon"><i data-feather="book"></i>View Details</button>
+                            <button class="btn-details icon"><i data-feather="book-open"></i>Mark as Read</button>
+                            <button class="btn-details">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
