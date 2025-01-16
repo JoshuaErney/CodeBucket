@@ -1,0 +1,152 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+main {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+fieldset.book-details {
+    grid-column: 1;
+    grid-row: span 1;
+}
+
+fieldset.additional-details {
+    grid-column: 2;
+    grid-row: span 3;
+}
+
+fieldset.administrative-details {
+    grid-column: 1;
+    grid-row: span 2;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+    padding: 0 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fafafa;
+    color: #333;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #000;
+    background-color: #fff;
+}
+
+/* Style for the button group container */
+.btn-group {
+    display: flex;
+    /* Use flexbox for layout */
+    width: 100%;
+    /* Ensure it spans the full width */
+    gap: 10px;
+    /* Optional: Add some space between buttons */
+}
+
+/* Style for the submit button */
+.btn-group button[type="submit"] {
+    flex: 9;
+    /* Take up 90% of the width */
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Style for the cancel button */
+.btn-group button[type="cancel"] {
+    flex: 1;
+    /* Take up 10% of the width */
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Add hover effects for buttons */
+.btn-group button[type="submit"]:hover,
+.btn-group button[type="cancel"]:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    input,
+    textarea,
+    select {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
