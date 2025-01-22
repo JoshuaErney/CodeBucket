@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/ProjectLibrary/css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
     <title>Project: Book Library</title>
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
@@ -15,11 +15,57 @@
             <ul>
                 <li><a href="index.html" id="brandName">The Spine Shelf</a></li>
                 <div class="container">
+
+                    <dialog>
+                        <form action="" method="dialog" name="newBookForm">
+                            <!-- Book Details -->
+                            <fieldset class="book-details">
+                                <legend>Book Details</legend>
+                                <label for="bookTitle">Title (required):</label>
+                                <input type="text" id="bookTitle" name="bookTitle" value="" required>
+
+                                <label for="bookAuthor">Author (required):</label>
+                                <input type="text" id="bookAuthor" name="bookAuthor" value="" required>
+
+                                <label for="bookGenre">Genre:</label>
+                                <select id="bookGenre" name="bookGenre">
+                                    <option value="" disabled selected>Select one</option>
+                                    <option value="fiction">Fiction</option>
+                                    <option value="nonfiction">Non-fiction</option>
+                                    <option value="mystery">Mystery</option>
+                                    <option value="fantasy">Fantasy</option>
+                                    <option value="sci-fi">Science Fiction</option>
+                                    <option value="romance">Romance</option>
+                                    <option value="horror">Horror</option>
+                                    <option value="thriller">Thriller</option>
+                                    <option value="biography">Biography</option>
+                                    <option value="history">History</option>
+                                    <option value="poetry">Poetry</option>
+                                </select>
+
+                                <label for="ISBN">ISBN number: </label>
+                                <input type="number" id="ISBN" name="bookISBN" placeholder="10-digit or 13-digit ISBN"
+                                    value="" maxlength="13" minlength="10">
+
+                                <label for="pageNum">Number of Pages </label>
+                                <input type="number" id="pageNum" name="bookPageNum" placeholder="329" value=""
+                                    maxlength="5000">
+                            </fieldset>
+
+                            <!-- Button Group -->
+                            <div class="btn-group">
+                                <button type="submit">Submit</button>
+                                <button type="cancel" class="btn-dialog">Cancel</button>
+                            </div>
+                        </form>
+                    </dialog>
+
                     <li>
-                        <a href="#" class="icon"><i data-feather="plus"></i> Quick Add</a>
+                        <a href="#" class="icon nav-list-link btn-dialog"><i data-feather="plus"></i> Quick Add</a>
                     </li>
                     <li>
-                        <a href="newBookForm.html" class="icon">Add Book <i data-feather="external-link"></i></a>
+                        <a href="newBookForm.html" class="icon nav-list-link">Add Book <i
+                                data-feather="external-link"></i></a>
                     </li>
                 </div>
             </ul>
@@ -28,9 +74,9 @@
     <main>
         <section>
             <div class="bookDisplay" aria-live="polite" aria-busy="false">
-                <div class="book-card">
+                <!-- <div class="book-card">
                     <div class="book-cover">
-                        <img src="/ProjectLibrary/pawan-thapa-66Oo9dALyTE-unsplash.jpg" alt="Book Cover">
+                        <img src="/pawan-thapa-66Oo9dALyTE-unsplash.jpg" alt="Book Cover">
                     </div>
                     <div class="book-info">
                         <h2 class="book-title">Book Title</h2>
@@ -41,10 +87,10 @@
                         <div class="btn-group">
                             <button class="btn-details icon"><i data-feather="book"></i>View Details</button>
                             <button class="btn-details icon"><i data-feather="book-open"></i>Mark as Read</button>
-                            <button class="btn-details">Remove</button>
+                            <button class="btn-details icon"><i data-feather="trash"></i>Remove from Shelf</button>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
     </main>
@@ -57,6 +103,8 @@
         document.getElementById('current-year').textContent = new Date().getFullYear();
         feather.replace();
     </script>
+
+    <script src="/js/quickAdd.js"></script>
 </body>
 
 </html>
