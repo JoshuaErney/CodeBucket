@@ -1,7 +1,5 @@
 const dialog = document.querySelector("dialog");
 const form = document.querySelector("form");
-const showBtn = document.querySelector("a.btn-dialog");
-const closeBtn = document.querySelector("button.btn-dialog");
 const submitBtn = document.querySelector("button[type='submit']");
 
 const titleInput = document.getElementById("bookTitle");
@@ -24,16 +22,6 @@ function clearInputFields(title, author, genre, isbn, numOfPages) {
     isbn.value = "";
     numOfPages.value = "";
 }
-
-// "Show the dialog" button opens the dialog modally
-showBtn.addEventListener("click", () => {
-    dialog.showModal();
-});
-
-// "Close" button closes the dialog
-closeBtn.addEventListener("click", () => {
-    dialog.close();
-});
 
 // Submit button captures the form data
 submitBtn.addEventListener("click", (event) => {

@@ -58,6 +58,16 @@ ul li a {
     font-weight: bold;
 }
 
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 /* Button-like link styling */
 .icon {
     background-color: black;
@@ -240,6 +250,7 @@ fieldset.book-details {
     display: flex;
     flex-direction: column;
     width: 450px;
+    gap: 1rem;
 }
 
 dialog fieldset {
@@ -264,12 +275,18 @@ dialog label {
     color: #444;
 }
 
+/* Style for <small> elements */
+form .form-description {
+    font-size: 0.875rem;
+    color: #6c757d;
+    display: block;
+}
+
 dialog input,
 dialog textarea,
 dialog select {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
     font-size: 0.9rem;
     border: 1px solid #ccc;
     border-radius: 5px;
